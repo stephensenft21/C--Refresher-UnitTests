@@ -27,6 +27,8 @@ namespace GradeBook {
                 result.Average += grade;
             }
             result.Average /= grades.Count;
+            result.Average = Math.Round(result.Average,2);
+
             return result;
         }
         public void ListGrades()
